@@ -9,8 +9,8 @@ Some coding example below:
 
 ```
 import numpy as np
-from adaboost import *
-from base_estimater import *
+from adaboost import AdaBoostClassifier
+from base_estimater import Node, DecisionTreeClassifier
 
 myTree = DecisionTreeClassifier(max_depth=10)
 myAda = AdaBoostClassifier(myTree, 150, 1)
